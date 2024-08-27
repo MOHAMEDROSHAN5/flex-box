@@ -198,8 +198,23 @@ h3 {
     background-color: #a12c6e;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 1200px) {
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .container-one {
+        padding: 20px 100px;
+    }
+
+    .container-four {
+        padding: 40px 100px;
+    }
+
+    .menu ul {
+        justify-content: flex-end;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .container-one {
         padding: 20px 50px;
     }
@@ -208,15 +223,20 @@ h3 {
         padding: 40px 50px;
     }
 
-    .menu {
-        position: static;
+    .menu ul {
+        justify-content: center;
     }
 
-    .menu ul {
-        justify-content: flex-end;
+    .container-box .box {
+        width: 45%;
+    }
+
+    .levels {
+        width: 90%;
     }
 }
 
+/* Mobile */
 @media screen and (max-width: 768px) {
     .container-one {
         flex-direction: column;
@@ -224,24 +244,20 @@ h3 {
         padding: 20px;
     }
 
-    .menu {
-        width: 100%;
-    }
-
     .menu ul {
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
     }
 
     .container-box .box {
         width: 100%;
-        margin: 10px 0;
     }
 
     .container-four {
         flex-direction: column;
         align-items: center;
-        padding: 40px 20px;
+        padding: 20px;
     }
 
     .container-four .box-1,
@@ -260,26 +276,9 @@ h3 {
     .bag img {
         width: 100%;
     }
-}
-
-@media screen and (max-width: 480px) {
-
-    .heading,
-    .mahi {
-        font-size: 24px;
-    }
-
-    .container-box .box {
-        width: 100%;
-        margin: 10px 0;
-    }
 
     .container-four input[type="email"],
     .container-four input[type="submit"] {
         width: 100%;
-    }
-
-    .container-four input[type="submit"] {
-        width: auto;
     }
 }
