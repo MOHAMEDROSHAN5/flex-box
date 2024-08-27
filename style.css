@@ -237,7 +237,7 @@ h3 {
 }
 
 /* Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     .container-one {
         flex-direction: column;
         align-items: flex-start;
